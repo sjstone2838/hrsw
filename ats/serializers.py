@@ -1,27 +1,43 @@
 from rest_framework import serializers
-from snippets.models import *
+from ats.models import *
 from django.contrib.auth.models import User
 
-
-class SnippetSerializer(serializers.HyperlinkedModelSerializer):
-    owner = serializers.ReadOnlyField(source='owner.username')
-    highlight = serializers.HyperlinkedIdentityField(view_name='snippet-highlight', format='html')
-
-    class Meta:
-        model = Snippet
-        fields = ('url', 'highlight', 'owner',
-                  'title', 'code', 'linenos', 'language', 'style')
-                  
 class UserSerializer(serializers.HyperlinkedModelSerializer):
-    snippets = serializers.HyperlinkedRelatedField(queryset=Snippet.objects.all(), view_name='snippet-detail', many=True)
-
     class Meta:
         model = User
-        fields = ('url', 'username', 'snippets')
+        fields = ('url', 'username',)
 
-class PersonSerializer(serializers.HyperlinkedModelSerializer):
-    # personstest = serializers.HyperlinkedRelatedField(queryset=Person.objects.all(), view_name='person-detail', many=True)
-
+class UserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = Person
-        fields = ('pk','created','first_name','last_name','url')
+        model = User
+        # fields = ('url', 'first_name','last_name','email','username',)
+        fields = '__all__'
+
+class OrganizationSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = Organization
+        fields = '__all__'
+
+class RoleSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = Role
+        fields = '__all__'
+
+class UserProfileSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = UserProfile
+        fields = ('url', 'user','organization')
+
+class ProjectSerializer(serializers.HyperlinkedModelSerializer):
+    # my_field = serializers.SerializerMethodField('is_active')
+
+    # def is_active(self, project):
+    #     userProfiles = UserProfile.objects.filter(organization=project.organization)
+    #     return UserProfileSerializer(userProfiles, many=True, context={'request': request}).data
+    
+    class Meta:
+        model = Project
+        fields = ('url', 'created','organization','role','status','openPositionsCount','filledPositionsCount')#,'my_field')
+
+
+

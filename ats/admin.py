@@ -1,20 +1,25 @@
 from django.contrib import admin
-from snippets.models import *
+from ats.models import *
 from .models import *
 from django.core import urlresolvers
 from django.http import HttpResponse
 
-class SnippetAdmin(admin.ModelAdmin):
-  list_display = ('created', 'title', 'code',  'linenos',  'language', 'style', 'owner', 'highlighted')
-
-admin.site.register(Snippet,SnippetAdmin)
-
-class PersonAdmin(admin.ModelAdmin):
-  list_display = ('pk','first_name', 'last_name', 'created')
-
-admin.site.register(Person,PersonAdmin)
-
 class OrganizationAdmin(admin.ModelAdmin):
-  list_display = ('pk','name', 'industry')
+  list_display = ('pk','name', 'industry','created')
 
 admin.site.register(Organization,OrganizationAdmin)
+
+class ProjectAdmin(admin.ModelAdmin):
+  list_display = ('pk','created', 'organization', 'role', 'status', 'openPositionsCount','filledPositionsCount')
+
+admin.site.register(Project,ProjectAdmin)
+
+class RoleAdmin(admin.ModelAdmin):
+  list_display = ('pk','title','organization','description','created')
+
+admin.site.register(Role,RoleAdmin)
+
+class UserProfileAdmin(admin.ModelAdmin):
+  list_display = ('pk','user','organization')
+
+admin.site.register(UserProfile,UserProfileAdmin)
