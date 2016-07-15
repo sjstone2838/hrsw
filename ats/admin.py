@@ -23,3 +23,18 @@ class UserProfileAdmin(admin.ModelAdmin):
   list_display = ('pk','user','organization')
 
 admin.site.register(UserProfile,UserProfileAdmin)
+
+class PersonAdmin(admin.ModelAdmin):
+  list_display = ('pk','first_name','last_name','email')
+
+admin.site.register(Person,PersonAdmin)
+
+class ApplicantAdmin(admin.ModelAdmin):
+  list_display = ('pk','person','project')
+
+admin.site.register(Applicant,ApplicantAdmin)
+
+class ApplicantEventAdmin(admin.ModelAdmin):
+  list_display = ('pk','applicant','eventType','datetime','owner')
+
+admin.site.register(ApplicantEvent,ApplicantEventAdmin)

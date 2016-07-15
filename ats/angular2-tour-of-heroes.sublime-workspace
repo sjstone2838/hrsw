@@ -1,0 +1,1462 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"sav",
+				"savedHero"
+			],
+			[
+				"User",
+				"UserProfileSerializer"
+			],
+			[
+				"role",
+				"roleTitles"
+			],
+			[
+				"fir",
+				"firstSyllables"
+			],
+			[
+				"exon",
+				"exonTooltip"
+			],
+			[
+				"trans",
+				"transcriptTooltip"
+			],
+			[
+				"transcriptH",
+				"transcriptHeight"
+			],
+			[
+				"svg",
+				"svgWidth"
+			],
+			[
+				"left",
+				"leftOffset"
+			],
+			[
+				"sv",
+				"svgWidth"
+			],
+			[
+				"gene",
+				"geneStart"
+			],
+			[
+				"transcr",
+				"transcriptTopOffset"
+			],
+			[
+				"chromo",
+				"chromosomeBand"
+			],
+			[
+				"axi",
+				"axisHeight"
+			],
+			[
+				"tra",
+				"transcriptHeight"
+			],
+			[
+				"transc",
+				"transcriptLeftOffset"
+			],
+			[
+				"transcript",
+				"transcriptLeftOffset"
+			],
+			[
+				"y",
+				"graphYOffset"
+			],
+			[
+				"sub",
+				"subAxisHeight"
+			],
+			[
+				"var",
+				"variantTick"
+			],
+			[
+				"grap",
+				"graphYOffset"
+			],
+			[
+				"class",
+				"classSelector"
+			],
+			[
+				"draw",
+				"drawAxis"
+			],
+			[
+				"i",
+				"if	if"
+			],
+			[
+				"table",
+				"tableWidth"
+			],
+			[
+				"go",
+				"goToRow"
+			],
+			[
+				"child",
+				"childName"
+			],
+			[
+				"parent",
+				"parentName"
+			],
+			[
+				"selected",
+				"selectedRecord"
+			],
+			[
+				"selec",
+				"selectedRecord"
+			],
+			[
+				"max",
+				"maxLeftColumn"
+			],
+			[
+				"got",
+				"goToColumn"
+			],
+			[
+				"Max",
+				"maxLeftOffset"
+			],
+			[
+				"adj",
+				"adjustXCursor"
+			],
+			[
+				"new",
+				"newState"
+			],
+			[
+				"data",
+				"dataInMemory"
+			],
+			[
+				"show",
+				"showPageLoader"
+			],
+			[
+				"filter",
+				"filteringState"
+			],
+			[
+				"record",
+				"recordPointer"
+			],
+			[
+				"recrod",
+				"recordPointer"
+			],
+			[
+				"refreshVis",
+				"refreshVisibleData"
+			],
+			[
+				"emt",
+				"emptyRowsNeeded"
+			],
+			[
+				"total",
+				"totalCount"
+			],
+			[
+				"sele",
+				"selectedRecord"
+			],
+			[
+				"togg",
+				"toggleField"
+			],
+			[
+				"column",
+				"columnWidth"
+			],
+			[
+				"reco",
+				"recordCount"
+			],
+			[
+				"page",
+				"pageLimit"
+			],
+			[
+				"tmp",
+				"tmpRecord"
+			],
+			[
+				"yCu",
+				"yCursorHeightInRows"
+			],
+			[
+				"wheelDe",
+				"wheelDeltaY"
+			],
+			[
+				"visible",
+				"visibleData"
+			],
+			[
+				"ap",
+				"apply"
+			],
+			[
+				"forwardBuffer",
+				"forwardBufferStop"
+			],
+			[
+				"back",
+				"backbufferstart"
+			],
+			[
+				"for",
+				"forwardBufferStop"
+			],
+			[
+				"forw",
+				"forwardBufferStop"
+			],
+			[
+				"backBuffer",
+				"backBufferStart"
+			],
+			[
+				"yScroll",
+				"yScrollBarTopOffset"
+			],
+			[
+				"yCurs",
+				"yCursorMinHeight"
+			],
+			[
+				"isActive",
+				"isActiveField"
+			],
+			[
+				"is",
+				"isActiveField"
+			],
+			[
+				"drop",
+				"dropdown__select"
+			],
+			[
+				"dro",
+				"dropdown__select"
+			],
+			[
+				"empty",
+				"emptyRowsNeeded"
+			],
+			[
+				"visib",
+				"visibleData"
+			],
+			[
+				"scrol",
+				"scroll-bar--y__page"
+			],
+			[
+				"scroll-bar",
+				"scroll-bar--y__cursor"
+			],
+			[
+				"slide",
+				"slideDown"
+			],
+			[
+				"scr",
+				"scrollOneRow"
+			],
+			[
+				"load",
+				"loadType"
+			],
+			[
+				"yScr",
+				"yScrollBar"
+			],
+			[
+				"first",
+				"firstRow"
+			],
+			[
+				"forward",
+				"forwardBuffer"
+			],
+			[
+				"mouse",
+				"mouseMoves"
+			],
+			[
+				"yu",
+				"yCursorInternalOffset"
+			],
+			[
+				"visi",
+				"visibleData"
+			],
+			[
+				"stop",
+				"stopPropagation"
+			],
+			[
+				"cur",
+				"cursor_row"
+			],
+			[
+				"vis",
+				"visibleDataAsync"
+			],
+			[
+				"vi",
+				"visibleDataAsync"
+			],
+			[
+				"ycu",
+				"yCursorInternalOffset"
+			],
+			[
+				"yCur",
+				"yCursorInternalOffset"
+			],
+			[
+				"primary",
+				"lastPrimaryKey"
+			],
+			[
+				"ySc",
+				"yScrollBar"
+			],
+			[
+				"whe",
+				"wheelDeltaCounter"
+			],
+			[
+				"whee",
+				"wheelDeltaCounter"
+			],
+			[
+				"last",
+				"lastPrimaryKey"
+			],
+			[
+				"las",
+				"lastPrimaryKey"
+			],
+			[
+				"Last",
+				"lastRecordIndex"
+			],
+			[
+				"object",
+				"objectFields"
+			],
+			[
+				"objec",
+				"objectFields"
+			],
+			[
+				"adjus",
+				"adjustScrollBar"
+			],
+			[
+				"row",
+				"moveRows"
+			],
+			[
+				"track",
+				"trackScrollBar"
+			],
+			[
+				"yCursor",
+				"yCursorHeight"
+			],
+			[
+				"d",
+				"deps"
+			],
+			[
+				"sc",
+				"scrollDataWrapper"
+			],
+			[
+				"wheel",
+				"wheelDeltaCounter"
+			],
+			[
+				"todo",
+				"todoDB"
+			],
+			[
+				"datas",
+				"datasetKey"
+			],
+			[
+				"field",
+				"fieldValue"
+			],
+			[
+				"invitatio",
+				"invitationUrlPrefix"
+			],
+			[
+				"copy",
+				"copyInvitation"
+			],
+			[
+				"invit",
+				"invitationUrl"
+			],
+			[
+				"q",
+				"q_arm"
+			],
+			[
+				"view",
+				"viewedChromosomes"
+			],
+			[
+				"acc",
+				"accessToken"
+			],
+			[
+				"Mark",
+				"MarketCapitalization"
+			],
+			[
+				"PEG",
+				"PEGRatio"
+			],
+			[
+				"PE",
+				"PERatio"
+			],
+			[
+				"homo",
+				"homozygote_count"
+			],
+			[
+				"allele",
+				"allele_count"
+			],
+			[
+				"bar",
+				"barHeight"
+			],
+			[
+				"Bar",
+				"barWidth"
+			],
+			[
+				"rel",
+				"rel_centromere_pos"
+			],
+			[
+				"b",
+				"border-color"
+			],
+			[
+				"centromer",
+				"centromere_pos"
+			],
+			[
+				"centrom",
+				"centromere_pos"
+			],
+			[
+				"band",
+				"band_label"
+			],
+			[
+				"world_",
+				"world_object_i"
+			],
+			[
+				"inher",
+				"inherit"
+			],
+			[
+				"test",
+				"test3b"
+			],
+			[
+				"shift",
+				"shift_start"
+			],
+			[
+				"list_to_stream",
+				"list_to_stream_rec"
+			],
+			[
+				"list_to",
+				"list_to_stream_rec"
+			],
+			[
+				"Is",
+				"IsOwnerOrReadOnly"
+			],
+			[
+				"ser",
+				"serializer_class"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/samstone/angular2-tour-of-heroes/app/main.ts",
+			"settings":
+			{
+				"buffer_size": 744,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/samstone/angular2-tour-of-heroes/app/dashboard.component.ts",
+			"settings":
+			{
+				"buffer_size": 676,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/samstone/angular2-tour-of-heroes/app/heroes.component.ts",
+			"settings":
+			{
+				"buffer_size": 1563,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/samstone/angular2-tour-of-heroes/app/heroes.component.html",
+			"settings":
+			{
+				"buffer_size": 687,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/samstone/angular2-tour-of-heroes/app/hero-detail.component.html",
+			"settings":
+			{
+				"buffer_size": 296,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/samstone/angular2-tour-of-heroes/app/hero.service.ts",
+			"settings":
+			{
+				"buffer_size": 1916,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/samstone/angular2-tour-of-heroes/app/hero-detail.component.ts",
+			"settings":
+			{
+				"buffer_size": 1472,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 367.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/samstone/angular2-tour-of-heroes",
+		"/Users/samstone/angular2-tour-of-heroes/app"
+	],
+	"file_history":
+	[
+		"/Users/samstone/hrsw/ats/angular2-tour-of-heroes.sublime-project",
+		"/Users/samstone/angular2-tour-of-heroes/app/in-memory-data.service.ts",
+		"/Users/samstone/angular2-tour-of-heroes/app/hero-detail.component.html",
+		"/Users/samstone/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/samstone/hrsw/platform/settings.py",
+		"/Users/samstone/hrsw/ats/management/__init__.py",
+		"/Users/samstone/hrsw/manage.py",
+		"/Users/samstone/hrsw/platform/wsgi.py",
+		"/Users/samstone/hrsw/gulpfile.js",
+		"/Users/samstone/hrsw/requirements.txt",
+		"/Users/samstone/hrsw/ats/serializers.py",
+		"/Users/samstone/hrsw/README.md",
+		"/Users/samstone/www.solvebio.com/client/img/logo-api.svg",
+		"/Users/samstone/www.solvebio.com/client-public/scripts/explorers/views/variant.tpl.html",
+		"/Users/samstone/www.solvebio.com/client-public/scripts/explorers/views/gene.tpl.html",
+		"/Users/samstone/www.solvebio.com/client-public/less/public.less",
+		"/Users/samstone/www.solvebio.com/client/scripts/variant-explorer/services/variant-graphs.service.js",
+		"/Users/samstone/angular2-quickstart/app/main.ts",
+		"/Users/samstone/www.solvebio.com/client-mesh/less/explorer.less",
+		"/Users/samstone/www.solvebio.com/core/less/color.less",
+		"/Users/samstone/www.solvebio.com/node_modules/grunt/node_modules/colors/colors.js",
+		"/Users/samstone/www.solvebio.com/client-mesh/scripts/library/controllers/infinite-table.controller.js",
+		"/Users/samstone/www.solvebio.com/client-mesh/scripts/variant-explorer/controllers/effects.controller.js",
+		"/Users/samstone/www.solvebio.com/core/scripts/ui/components/variant-graphs/index.js",
+		"/Users/samstone/www.solvebio.com/client/scripts/variant-explorer/directives/gene-graphs.directive.js",
+		"/Users/samstone/www.solvebio.com/client-mesh/scripts/library/services/filtering-state.service.js",
+		"/Users/samstone/www.solvebio.com/client-mesh/scripts/library/directives/infinite-scroll.directive.js",
+		"/Users/samstone/www.solvebio.com/core/scripts/ui/components/scroll/quantum-scroll.service.js",
+		"/Users/samstone/www.solvebio.com/core/scripts/ui/components/scroll/table-scrollbar.service.js",
+		"/Users/samstone/www.solvebio.com/client-mesh/scripts/library/services/infinite-scroll.service.js",
+		"/Users/samstone/www.solvebio.com/client-mesh/scripts/library/controllers/depository.controller.js",
+		"/Users/samstone/www.solvebio.com/client-mesh/less/depository.less",
+		"/Users/samstone/www.solvebio.com/client-mesh/scripts/library/directives/dataset-side-menu/dataset-json.tpl.html",
+		"/Users/samstone/www.solvebio.com/client-mesh/scripts/library/views/depository.tpl.html",
+		"/Users/samstone/www.solvebio.com/client-public/scripts/utils/services/constants.service.js",
+		"/Users/samstone/www.solvebio.com/client-mesh/scripts/utils/services/constants.service.js",
+		"/Users/samstone/www.solvebio.com/core/scripts/ui/components/scroll/table-scrollbar.directive.js",
+		"/Users/samstone/www.solvebio.com/client-mesh/scripts/library/directives/dataset-side-menu/dataset-json.directive.js",
+		"/Users/samstone/www.solvebio.com/core/less/button.less",
+		"/Users/samstone/www.solvebio.com/client-mesh/less/view.less",
+		"/Users/samstone/www.solvebio.com/core/scripts/errors/index.js",
+		"/Users/samstone/www.solvebio.com/core/less/z-index.less",
+		"/Users/samstone/www.solvebio.com/core/less/box-model.less",
+		"/Users/samstone/www.solvebio.com/client-mesh/scripts/library/services/filter.service.js",
+		"/Users/samstone/www.solvebio.com/core/scripts/ui/components/scroll/quantum-scroll.directive.js",
+		"/Users/samstone/www.solvebio.com/client-mesh/scripts/ui/components/lookup-bar/lookup-bar.directive.js",
+		"/Users/samstone/www.solvebio.com/client/scripts/library/services/filter.service.js",
+		"/Users/samstone/www.solvebio.com/core/less/flexbox.less",
+		"/Users/samstone/www.solvebio.com/client-mesh/scripts/library/directives/dataset-side-menu/dataset-code.tpl.html",
+		"/Users/samstone/www.solvebio.com/client-mesh/scripts/library/directives/dataset-side-menu/dataset-side-menu.directive.js",
+		"/Users/samstone/www.solvebio.com/client-mesh/scripts/library/directives/dataset-side-menu/dataset-intelligence.directive.js",
+		"/Users/samstone/www.solvebio.com/docker-compose.yml",
+		"/Users/samstone/www.solvebio.com/client-mesh/scripts/library/index.js",
+		"/Users/samstone/www.solvebio.com/client-mesh/scripts/library/controllers/index.js",
+		"/Users/samstone/www.solvebio.com/client/scripts/library/controllers/dataset.controller.js",
+		"/Users/samstone/Library/Application Support/Sublime Text 3/Packages/ESLint/ESLint.sublime-settings",
+		"/Users/samstone/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/Users/samstone/Library/Application Support/Sublime Text 3/Packages/User/ESLint.sublime-settings",
+		"/Users/samstone/Library/Application Support/Sublime Text 3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/Users/samstone/Library/Application Support/Sublime Text 3/Packages/ESLint/Default (OSX).sublime-keymap",
+		"/Users/samstone/Library/Application Support/Sublime Text 3/Packages/JSHint Gutter/JSHint.sublime-settings",
+		"/Users/samstone/Library/Application Support/Sublime Text 3/Packages/JSHint Gutter/.jshintrc",
+		"/Users/samstone/www.solvebio.com/core/scripts/ui/components/checkbox/checkbox.directive.js",
+		"/Users/samstone/www.solvebio.com/client-mesh/scripts/library/services/index.js",
+		"/Users/samstone/www.solvebio.com/core/scripts/ui/components/checkbox/checkbox.tpl.html",
+		"/Users/samstone/www.solvebio.com/client-mesh/scripts/library/views/infinite-table.tpl.html",
+		"/Users/samstone/www.solvebio.com/core/less/form.less",
+		"/Users/samstone/www.solvebio.com/client-mesh/scripts/library/directives/dataset-side-menu/dataset-intelligence.tpl.html",
+		"/Users/samstone/www.solvebio.com/core/scripts/utils/services/api-queries.service.js",
+		"/Users/samstone/www.solvebio.com/client-mesh/scripts/library/directives/dataset-side-menu/dataset-filtering.directive.js",
+		"/Users/samstone/www.solvebio.com/client-mesh/scripts/library/directives/dataset-side-menu/filtering-dropdown.directive.js",
+		"/Users/samstone/www.solvebio.com/client-mesh/scripts/library/directives/dataset-side-menu/filtering-dropdown.tpl.html",
+		"/Users/samstone/www.solvebio.com/client-mesh/less/infinite-table.less",
+		"/Users/samstone/www.solvebio.com/core/less/type.less",
+		"/Users/samstone/www.solvebio.com/core/less/utilities.less",
+		"/Users/samstone/www.solvebio.com/core/less/link.less",
+		"/Users/samstone/www.solvebio.com/dist/solvebio-static/public/js/bundle.js",
+		"/Users/samstone/www.solvebio.com/core/scripts/ui/components/dropdown/dropdown.directive.js",
+		"/Users/samstone/www.solvebio.com/client-mesh/scripts/variant-explorer/views/gene.tpl.html",
+		"/Users/samstone/www.solvebio.com/client-mesh/scripts/variant-explorer/controllers/gene.controller.js",
+		"/Users/samstone/www.solvebio.com/client-mesh/scripts/variant-explorer/directives/index.js",
+		"/Users/samstone/www.solvebio.com/client-mesh/scripts/variant-explorer/controllers/index.js",
+		"/Users/samstone/www.solvebio.com/core/scripts/utils/services/index.js",
+		"/Users/samstone/www.solvebio.com/deploy/travis/script.sh",
+		"/Users/samstone/www.solvebio.com/.travis.yml",
+		"/Users/samstone/www.solvebio.com/deploy/travis/install.sh",
+		"/Users/samstone/www.solvebio.com/core/scripts/ui/components/scroll/block-scroll.directive.js",
+		"/Users/samstone/www.solvebio.com/core/scripts/utils/services/flags.service.js",
+		"/Users/samstone/www.solvebio.com/core/less/tooltip.less",
+		"/Users/samstone/www.solvebio.com/core/scripts/ui/utils/directives/fixed-header.directive.js",
+		"/Users/samstone/www.solvebio.com/client-mesh/scripts/library/controllers/data-sources.controller.js",
+		"/Users/samstone/Desktop/backup-infinite-table.tpl.html",
+		"/Users/samstone/Desktop/backup-infinite-table.controller.js",
+		"/Users/samstone/www.solvebio.com/client-public/scripts/ui/components/button-progress/button-progress.tpl.html",
+		"/Users/samstone/www.solvebio.com/core/less/loader.less",
+		"/Users/samstone/www.solvebio.com/client-mesh/less/style.less",
+		"/Users/samstone/www.solvebio.com/grunt/build.task.js",
+		"/Users/samstone/www.solvebio.com/core/scripts/utils/services/entity-validator.service.js",
+		"/Users/samstone/www.solvebio.com/client-mesh/scripts/library/controllers/infinite-table-data.json",
+		"/Users/samstone/www.solvebio.com/client/scripts/variant-explorer/services/variant-explorer.service.js",
+		"/Users/samstone/www.solvebio.com/core/scripts/utils/services/variant-explorer.service.js",
+		"/Users/samstone/www.solvebio.com/client/scripts/variant-explorer/controllers/classifier.controller.js",
+		"/Users/samstone/www.solvebio.com/client/less/common/checkbox.less",
+		"/Users/samstone/www.solvebio.com/client/less/common/tooltips.less",
+		"/Users/samstone/www.solvebio.com/client/less/common/scrollbar.less",
+		"/Users/samstone/www.solvebio.com/client/less/app/dataset.less",
+		"/Users/samstone/www.solvebio.com/node_modules/browser-sync/node_modules/browser-sync-ui/node_modules/weinre/web/client/inspector.css",
+		"/Users/samstone/www.solvebio.com/client-mesh/less/menu.less",
+		"/Users/samstone/www.solvebio.com/dist/solvebio-static/mesh/css/style.css",
+		"/Users/samstone/www.solvebio.com/client/less/app/content.less",
+		"/Users/samstone/www.solvebio.com/client/less/common/buttons.less",
+		"/Users/samstone/www.solvebio.com/core/less/grid.less",
+		"/Users/samstone/www.solvebio.com/client/less/common/ui-grid.custom.less",
+		"/Users/samstone/www.solvebio.com/client/less/common/border.less",
+		"/Users/samstone/www.solvebio.com/core/less/core.less",
+		"/Users/samstone/www.solvebio.com/core/less/table.less",
+		"/Users/samstone/www.solvebio.com/dist/solvebio-static/mesh/js/bundle.js",
+		"/Users/samstone/www.solvebio.com/client-mesh/scripts/library/controllers/data/infinite-table-data.json",
+		"/Users/samstone/www.solvebio.com/client-mesh/index.html",
+		"/Users/samstone/www.solvebio.com/client-mesh/scripts/library/controllers/scrollable.controller.js",
+		"/Users/samstone/www.solvebio.com/client-mesh/scripts/data-import/controllers/commit.controller.js",
+		"/Users/samstone/www.solvebio.com/client-mesh/scripts/gene-explorer/views/gene-summary.tpl.html",
+		"/Users/samstone/www.solvebio.com/client-mesh/scripts/gene-explorer/controllers/summary.controller.js",
+		"/Users/samstone/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/samstone/www.solvebio.com/client-mesh/scripts/data-import/directives/file-item-list.directive.js",
+		"/Users/samstone/www.solvebio.com/client-mesh/scripts/data-import/controllers/import.controller.js",
+		"/Users/samstone/www.solvebio.com/client-mesh/scripts/account-management/views/settings-team.tpl.html",
+		"/Users/samstone/www.solvebio.com/client-mesh/scripts/account-management/controllers/settings-team.controller.js"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/samstone/angular2-tour-of-heroes",
+			"/Users/samstone/hrsw",
+			"/Users/samstone/www.solvebio.com/core,/Users/samstone/www.solvebio.com/client-public,/Users/samstone/www.solvebio.com/client-mesh *.less",
+			"/Users/samstone/www.solvebio.com/core,/Users/samstone/www.solvebio.com/client-public,/Users/samstone/www.solvebio.com/client-mesh",
+			"/Users/samstone/www.solvebio.com/core,/Users/samstone/www.solvebio.com/client-public,/Users/samstone/www.solvebio.com/client-mesh, *.less",
+			"/Users/samstone/www.solvebio.com/core,/Users/samstone/www.solvebio.com/client-public,/Users/samstone/www.solvebio.com/client-mesh,",
+			"/Users/samstone/www.solvebio.com/core,/Users/samstone/www.solvebio.com/client-public,/Users/samstone/www.solvebio.com/client-mesh,*.less",
+			"/Users/samstone/www.solvebio.com/core,/Users/samstone/www.solvebio.com/client-public,/Users/samstone/www.solvebio.com/client-mesh,",
+			"/Users/samstone/www.solvebio.com/core,/Users/samstone/www.solvebio.com/client-public,/Users/samstone/www.solvebio.com/client-mesh, *.less",
+			"/Users/samstone/www.solvebio.com/core,/Users/samstone/www.solvebio.com/client-public,/Users/samstone/www.solvebio.com/client-mesh,",
+			"/Users/samstone/www.solvebio.com/core,/Users/samstone/www.solvebio.com/client-public,/Users/samstone/www.solvebio.com/client-mesh, *.less",
+			"/Users/samstone/www.solvebio.com/core,/Users/samstone/www.solvebio.com/client-mesh",
+			"/Users/samstone/www.solvebio.com/core,/Users/samstone/www.solvebio.com/client-public,/Users/samstone/www.solvebio.com/client-mesh,",
+			"/Users/samstone/www.solvebio.com/core,/Users/samstone/www.solvebio.com/client-public,/Users/samstone/www.solvebio.com/client-mesh, *.html",
+			"/Users/samstone/www.solvebio.com/core,/Users/samstone/www.solvebio.com/client-public,/Users/samstone/www.solvebio.com/client-mesh",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"getHeroes",
+			"lodash",
+			"ngFor",
+			"sublime",
+			"close",
+			"    ",
+			"   ",
+			"  ",
+			"foo",
+			"is_named_bar",
+			"positionCount",
+			"Project",
+			"Role",
+			"Project",
+			"Organization",
+			"Project",
+			"args",
+			"self.",
+			"company",
+			"firstSyllables",
+			"Role",
+			"argv",
+			"Project",
+			"Organization",
+			"Person",
+			"Pre-launch",
+			"MSG",
+			"snippets",
+			"snippetsatsat",
+			"snippets",
+			"tutorial",
+			"bash",
+			"TickMinWidth",
+			"tickMinWidth",
+			"drawTranscriptVariantTick",
+			"transcripts",
+			"var variantTick = ",
+			"TickMinWidth",
+			"tickMinWidth",
+			"1",
+			"path",
+			"cursor: pointer",
+			"ng",
+			"click",
+			"transcript",
+			"geneGraphs",
+			"classSelector",
+			".gene-graph__section",
+			"svgWidth",
+			"transcriptLeftOffset",
+			"svgHeight",
+			"transcriptTopOffset",
+			"{\n",
+			"geneStartLabel",
+			"geneStart",
+			"drawVariantTick",
+			"'y', 0)",
+			"console",
+			"label",
+			"text",
+			"svgWidth",
+			"svgHeight",
+			"data",
+			"d.",
+			"drawAxis",
+			"withTooltip",
+			"drawAxis",
+			"babel",
+			"classSelector",
+			"ClassSelector",
+			"classSelector",
+			"ClassSelector",
+			"classSelector",
+			"subClassSelector",
+			"svgWidth",
+			"translate",
+			"data",
+			"geneGraph",
+			"transcripts",
+			"transcri",
+			"transcripts",
+			"preload",
+			"drawAxis",
+			"drawVariantTick",
+			"variant-tick",
+			"geneGraph",
+			"text",
+			"flex-wrap--wrap",
+			"flex--wrap-wrap",
+			"drawGraphs",
+			"graphs.gene.draw",
+			"variant",
+			"data",
+			"browseFiles",
+			"browse",
+			"ng-repeat='transcript in data track by $index'",
+			"By $index",
+			"by  $index",
+			"order by",
+			"drawGraphs",
+			"classSelector",
+			"div>",
+			"geneGraphs",
+			"transcriptGraphs",
+			"variantGraphs",
+			"geneGraphs",
+			"update",
+			"geneGraph",
+			"results",
+			"variant",
+			"Variant",
+			"variant",
+			"geneGraphs",
+			"this variant",
+			"updateTableDimensions",
+			">>>>>>>>",
+			"sidebar",
+			"scroll",
+			"scrollLeft",
+			"gotocolumn",
+			"function gotocolumn",
+			"dataset__header",
+			"dataset__header-row",
+			"ataset__header-row",
+			"ataset-header",
+			"dataset__header",
+			"tablescrollbar.move",
+			"quantum"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"line2"
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/samstone/angular2-tour-of-heroes/app/main.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 744,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								744,
+								744
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/samstone/angular2-tour-of-heroes/app/dashboard.component.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 676,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								114,
+								114
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/samstone/angular2-tour-of-heroes/app/heroes.component.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1563,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								568,
+								568
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/samstone/angular2-tour-of-heroes/app/heroes.component.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 687,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								151,
+								151
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/samstone/angular2-tour-of-heroes/app/hero-detail.component.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 296,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								296,
+								296
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Users/samstone/angular2-tour-of-heroes/app/hero.service.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1916,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								489,
+								489
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/Users/samstone/angular2-tour-of-heroes/app/hero-detail.component.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1472,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								450,
+								450
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 417.0
+	},
+	"output.find_results":
+	{
+		"height": 665.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 25.0
+	},
+	"pinned_build_system": "",
+	"project": "angular2-tour-of-heroes.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"logo",
+				"client/img/logo-api.svg"
+			],
+			[
+				"client-public/scripts/explorers/views/variant.tpl.html",
+				"client-public/scripts/explorers/views/variant.tpl.html"
+			],
+			[
+				"client-public/scripts/explorers/views/gene.tpl.html",
+				"client-public/scripts/explorers/views/gene.tpl.html"
+			],
+			[
+				"client-public/less/public.less",
+				"client-public/less/public.less"
+			],
+			[
+				"public.less",
+				"client-public/less/public.less"
+			],
+			[
+				"variant-graph",
+				"client/scripts/variant-explorer/services/variant-graphs.service.js"
+			],
+			[
+				"explor",
+				"client-mesh/less/explorer.less"
+			],
+			[
+				"transcripts",
+				"core/scripts/ui/components/variant-graphs/transcripts-graph.tpl.html"
+			],
+			[
+				"transcript",
+				"core/scripts/ui/components/variant-graphs/transcripts-graph.directive.js"
+			],
+			[
+				"color",
+				"core/less/color.less"
+			],
+			[
+				"col",
+				"core/less/color.less"
+			],
+			[
+				"colors",
+				"node_modules/grunt/node_modules/colors/colors.js"
+			],
+			[
+				"infini",
+				"client-mesh/scripts/library/controllers/infinite-table.controller.js"
+			],
+			[
+				"constsa",
+				"client-public/scripts/utils/services/constants.service.js"
+			],
+			[
+				"table-scr",
+				"core/scripts/ui/components/scroll/table-scrollbar.directive.js"
+			],
+			[
+				"constants",
+				"client-mesh/scripts/utils/services/constants.service.js"
+			],
+			[
+				"depos",
+				"client-mesh/less/depository.less"
+			],
+			[
+				"deposit",
+				"client-mesh/less/depository.less"
+			],
+			[
+				"core/scripts/errors",
+				"core/scripts/errors/index.js"
+			],
+			[
+				"dataset-json",
+				"client-mesh/scripts/library/directives/dataset-side-menu/dataset-json.directive.js"
+			],
+			[
+				"z-inde",
+				"core/less/z-index.less"
+			],
+			[
+				"depository.less",
+				"client-mesh/less/depository.less"
+			],
+			[
+				"filter.ser",
+				"client-mesh/scripts/library/services/filter.service.js"
+			],
+			[
+				"quantum",
+				"core/scripts/ui/components/scroll/quantum-scroll.service.js"
+			],
+			[
+				"filter.serv",
+				"client-mesh/scripts/library/services/filter.service.js"
+			],
+			[
+				"flex",
+				"core/less/flexbox.less"
+			],
+			[
+				"form",
+				"core/less/form.less"
+			],
+			[
+				"view.less",
+				"client-mesh/less/view.less"
+			],
+			[
+				"depo",
+				"client-mesh/less/depository.less"
+			],
+			[
+				"tablescrollbar",
+				"core/scripts/ui/components/scroll/table-scrollbar.directive.js"
+			],
+			[
+				"filteringstate",
+				"client-mesh/scripts/library/services/filtering-state.service.js"
+			],
+			[
+				"api-qu",
+				"core/scripts/utils/services/api-queries.service.js"
+			],
+			[
+				"table-scrollbar.directive.js",
+				"core/scripts/ui/components/scroll/table-scrollbar.directive.js"
+			],
+			[
+				"docker",
+				"docker-compose.yml"
+			],
+			[
+				"deploy/travis/install.sh",
+				"deploy/travis/install.sh"
+			],
+			[
+				"deploy/travis/script.",
+				"deploy/travis/script.sh"
+			],
+			[
+				"tooltip",
+				"core/less/tooltip.less"
+			],
+			[
+				"button",
+				"core/less/button.less"
+			],
+			[
+				"",
+				"core/scripts/utils/services/api-queries.service.js"
+			],
+			[
+				"loaders",
+				"core/less/loader.less"
+			],
+			[
+				"utili",
+				"core/less/utilities.less"
+			],
+			[
+				"apiqu",
+				"core/scripts/utils/services/api-queries.service.js"
+			],
+			[
+				"flexbo",
+				"core/less/flexbox.less"
+			],
+			[
+				"flexb",
+				"core/less/flexbox.less"
+			],
+			[
+				"grid",
+				"core/less/grid.less"
+			],
+			[
+				"flexbox",
+				"core/less/flexbox.less"
+			],
+			[
+				"commi.cont",
+				"client-mesh/scripts/data-import/controllers/commit.controller.js"
+			],
+			[
+				"file.li",
+				"client-mesh/scripts/data-import/directives/file-item-list.directive.js"
+			],
+			[
+				"import.con",
+				"client-mesh/scripts/data-import/controllers/import.controller.js"
+			],
+			[
+				".less",
+				"client-mesh/less/menu.less"
+			],
+			[
+				"tables.less",
+				"client/less/common/tables.less"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 189.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

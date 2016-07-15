@@ -5,13 +5,7 @@ from django.contrib.auth.models import User
 class UserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = User
-        fields = ('url', 'username',)
-
-class UserSerializer(serializers.HyperlinkedModelSerializer):
-    class Meta:
-        model = User
-        # fields = ('url', 'first_name','last_name','email','username',)
-        fields = '__all__'
+        fields = ('url','username','first_name','last_name','email')
 
 class OrganizationSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
@@ -24,20 +18,46 @@ class RoleSerializer(serializers.HyperlinkedModelSerializer):
         fields = '__all__'
 
 class UserProfileSerializer(serializers.HyperlinkedModelSerializer):
+    user = UserSerializer()
+    organization = OrganizationSerializer()
+
     class Meta:
         model = UserProfile
-        fields = ('url', 'user','organization')
+        fields = '__all__'
+
+class PersonSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = Person
+        fields = '__all__'
+
+class ApplicantEventSerializer(serializers.HyperlinkedModelSerializer):
+    # owner = UserProfileSerializer()
+
+    class Meta:
+        model = ApplicantEvent
+        fields = ('url','applicant','eventType','datetime','owner')
+
+class ApplicantSerializer(serializers.HyperlinkedModelSerializer):
+    
+    # person is a related object of applicant
+    person = PersonSerializer()
+    applicantEvents = ApplicantEventSerializer(many=True)
+
+    class Meta:
+        model = Applicant
+        depth = 3
+        # applicant is a reverse relation; this tracks to the related_name of models.ApplicantEvent.applicant
+        fields = ('url','person','project','applicantEvents')
 
 class ProjectSerializer(serializers.HyperlinkedModelSerializer):
-    # my_field = serializers.SerializerMethodField('is_active')
-
-    # def is_active(self, project):
-    #     userProfiles = UserProfile.objects.filter(organization=project.organization)
-    #     return UserProfileSerializer(userProfiles, many=True, context={'request': request}).data
     
+    organization = OrganizationSerializer()
+    applicants = ApplicantSerializer(many=True)
+
     class Meta:
         model = Project
-        fields = ('url', 'created','organization','role','status','openPositionsCount','filledPositionsCount')#,'my_field')
+        depth = 3
+        fields = ('url', 'created','organization','role','status','openPositionsCount','filledPositionsCount','applicants')
 
 
 

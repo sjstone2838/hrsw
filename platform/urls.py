@@ -6,9 +6,12 @@ from rest_framework.routers import DefaultRouter
 router = DefaultRouter()
 router.register(r'users', views.UserViewSet)
 router.register(r'roles', views.RoleViewSet)
-router.register(r'userprofiles', views.UserProfileViewSet)
+router.register(r'userProfiles', views.UserProfileViewSet)
 router.register(r'projects', views.ProjectViewSet)
 router.register(r'organizations', views.OrganizationViewSet)
+router.register(r'applicants', views.ApplicantViewSet)
+router.register(r'applicantEvents', views.ApplicantEventViewSet)
+router.register(r'persons', views.PersonViewSet)
 
 urlpatterns = patterns('',
     url(r'^', include(router.urls)),
