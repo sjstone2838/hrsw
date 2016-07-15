@@ -52,3 +52,7 @@ class ProjectViewSet(viewsets.ModelViewSet):
             queryset = queryset.filter(organization=userProfile.organization)
 
         return queryset
+
+class QuestionViewSet(viewsets.ModelViewSet):
+    queryset = Question.objects.all()
+    serializer_class = QuestionSerializer

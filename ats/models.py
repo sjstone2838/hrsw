@@ -45,15 +45,12 @@ class Project(models.Model):
     def __unicode__(self):
         return self.role.title + ' at ' + self.organization.name
 
-
 class UserProfile(models.Model):
     user = models.ForeignKey(User, related_name="UserProfile_User")
     organization = models.ForeignKey(Organization, related_name = 'UserProfile_Organization')
 
     def __unicode__(self):
         return self.user.first_name + ' ' + self.user.last_name + ' (' + self.organization.name + ')'
-
-# Applicant models
 
 class Person(models.Model):
     first_name = models.CharField(max_length=200, blank=False)
@@ -80,4 +77,20 @@ class ApplicantEvent(models.Model):
     eventType = models.CharField(max_length=200, choices=APPLICANTEVENT_EVENTTYPE_CHOICES, blank=False)
     datetime = models.DateTimeField(blank=True)
     owner = models.ForeignKey(UserProfile, blank=True)
+
+    def __unicode__(self):
+        return str(self.applicant) + ": " + self.eventType
+
+class Question(models.Model):
+    question = models.TextField(blank=True, default='')
+    answer = models.CharField(max_length=200, blank=True, null=True)
+    index = models.IntegerField(default = 0)
+    role = models.ForeignKey(Role, blank=True, null=True, related_name='questions')
+    project = models.ForeignKey(Project, blank=True, null=True, related_name='questions')
+    applicantEvent = models.ForeignKey(ApplicantEvent, blank=True, null=True, related_name='questions')
+
+    def __unicode__(self):
+        return self.question[0:100]
+
+
 
