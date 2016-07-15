@@ -11,35 +11,35 @@ from ats.models import *
 from ats.permissions import IsOwnerOrReadOnly
 from ats.serializers import *
 
-class UserViewSet(viewsets.ReadOnlyModelViewSet):
+class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
 
-class OrganizationViewSet(viewsets.ReadOnlyModelViewSet):
+class OrganizationViewSet(viewsets.ModelViewSet):
     queryset = Organization.objects.all()
     serializer_class = OrganizationSerializer
 
-class RoleViewSet(viewsets.ReadOnlyModelViewSet):
+class RoleViewSet(viewsets.ModelViewSet):
     queryset = Role.objects.all()
     serializer_class = RoleSerializer
 
-class UserProfileViewSet(viewsets.ReadOnlyModelViewSet):
+class UserProfileViewSet(viewsets.ModelViewSet):
     queryset = UserProfile.objects.all()
     serializer_class = UserProfileSerializer
 
-class PersonViewSet(viewsets.ReadOnlyModelViewSet):
+class PersonViewSet(viewsets.ModelViewSet):
     queryset = Person.objects.all()
     serializer_class = PersonSerializer
 
-class ApplicantEventViewSet(viewsets.ReadOnlyModelViewSet):
+class ApplicantEventViewSet(viewsets.ModelViewSet):
     queryset = ApplicantEvent.objects.all()
     serializer_class = ApplicantEventSerializer
 
-class ApplicantViewSet(viewsets.ReadOnlyModelViewSet):
+class ApplicantViewSet(viewsets.ModelViewSet):
     queryset = Applicant.objects.all()
     serializer_class = ApplicantSerializer
 
-class ProjectViewSet(viewsets.ReadOnlyModelViewSet):
+class ProjectViewSet(viewsets.ModelViewSet):
     queryset = Project.objects.all()
     serializer_class = ProjectSerializer
 
