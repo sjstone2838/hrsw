@@ -7,9 +7,9 @@ from rest_framework import viewsets
 from rest_framework.decorators import detail_route
 from rest_framework.response import Response
 
-from ats.models import *
-from ats.permissions import IsOwnerOrReadOnly
-from ats.serializers import *
+from .models import *
+from .permissions import IsOwnerOrReadOnly
+from .serializers import *
 
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()

@@ -1,5 +1,4 @@
 from django.contrib import admin
-from ats.models import *
 from .models import *
 from django.core import urlresolvers
 from django.http import HttpResponse
