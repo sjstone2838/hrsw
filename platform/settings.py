@@ -1,3 +1,13 @@
+import os
+from django.core.exceptions import ImproperlyConfigured
+
+def get_env_variable(var_name):
+    try:
+        return os.environ[var_name]
+    except KeyError:
+        error_msg = "Set the {} environment variable".format(var_name)
+        raise ImproperlyConfigured(error_msg)
+
 # Django settings for platform project.
 
 DEBUG = True
@@ -78,7 +88,7 @@ STATICFILES_FINDERS = (
 )
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = '98s9du5ruv!j%shx0udb#uz1g@v^xl65zm1l-_5%8cs6%c*qm$'
+SECRET_KEY = get_env_variable('DJANGO_SECRET_KEY')
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
