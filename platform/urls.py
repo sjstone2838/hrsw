@@ -1,7 +1,9 @@
-from ats import views
 from django.conf.urls import patterns, url, include
 from django.contrib import admin
+from django.views.generic.base import RedirectView
 from rest_framework.routers import DefaultRouter
+
+from ats import views
 
 router = DefaultRouter()
 router.register(r'applicantEvents', views.ApplicantEventViewSet)
@@ -15,7 +17,9 @@ router.register(r'userProfiles', views.UserProfileViewSet)
 router.register(r'users', views.UserViewSet)
 
 urlpatterns = patterns('',
-    url(r'^api/', include(router.urls)),
+    url(r'^api/', include(router.urls), name='api_root'),
     url(r'^admin/', admin.site.urls),
-    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
+    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    #redirect all else to API root
+    url(r'^.*$', RedirectView.as_view(url='/api/'))
 )
