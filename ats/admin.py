@@ -32,5 +32,5 @@ class ApplicantEventAdmin(admin.ModelAdmin):
 admin.site.register(ApplicantEvent, ApplicantEventAdmin)
 
 class QuestionAdmin(admin.ModelAdmin):
-    list_display = ('pk', 'question', 'answer', 'index', 'role', 'project', 'applicantEvent')
+    list_display = ('pk', 'text', 'answer', 'index', 'role', 'project', 'applicantEvent')
 admin.site.register(Question, QuestionAdmin)

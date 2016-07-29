@@ -33,8 +33,7 @@ class PersonSerializer(serializers.HyperlinkedModelSerializer):
 class QuestionSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Question
-        depth = 1
-        fields = ('url', 'question', 'answer', 'index')
+        fields = '__all__'
 
 class ApplicantEventSerializer(serializers.HyperlinkedModelSerializer):
     owner = UserProfileSerializer()

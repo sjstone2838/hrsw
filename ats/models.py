@@ -54,8 +54,7 @@ class Project(models.Model):
         return self.role.title + ' at ' + self.organization.name
 
 class UserProfile(models.Model):
-    # Should be OneToOneField
-    user = models.ForeignKey(User, related_name="UserProfile_User")
+    user = models.OneToOneField(User, related_name="UserProfile_User")
     organization = models.ForeignKey(Organization, related_name='UserProfile_Organization')
 
     def __unicode__(self):
@@ -97,7 +96,7 @@ class ApplicantEvent(models.Model):
         return str(self.applicant) + ": " + self.eventType
 
 class Question(models.Model):
-    question = models.TextField(blank=True, default='')
+    text = models.TextField(blank=True, default='')
     answer = models.CharField(max_length=200, blank=True, null=True)
     index = models.IntegerField(default=0)
     role = models.ForeignKey(Role, blank=True, null=True, related_name='questions')
@@ -105,4 +104,4 @@ class Question(models.Model):
     applicantEvent = models.ForeignKey(ApplicantEvent, blank=True, null=True, related_name='questions')
 
     def __unicode__(self):
-        return self.question[0:100]
+        return self.text[0:100]
