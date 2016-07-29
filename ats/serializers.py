@@ -1,11 +1,11 @@
 from rest_framework import serializers
 from django.contrib.auth.models import User
-from .models import *
+from .models import UserProfile, Organization, Role, Person, Question, Applicant, ApplicantEvent, Project
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = User
-        fields = ('url','username','first_name','last_name','email')
+        fields = ('url', 'username', 'first_name', 'last_name', 'email')
 
 class OrganizationSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
@@ -34,7 +34,7 @@ class QuestionSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Question
         depth = 1
-        fields = ('url','question','answer','index')
+        fields = ('url', 'question', 'answer', 'index')
 
 class ApplicantEventSerializer(serializers.HyperlinkedModelSerializer):
     owner = UserProfileSerializer()
@@ -43,7 +43,7 @@ class ApplicantEventSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = ApplicantEvent
         depth = 3
-        fields = ('url','eventType','datetime','owner','questions')
+        fields = ('url', 'eventType', 'datetime', 'owner', 'questions')
 
 class ApplicantSerializer(serializers.HyperlinkedModelSerializer):
     # person is a related object of applicant
@@ -54,7 +54,7 @@ class ApplicantSerializer(serializers.HyperlinkedModelSerializer):
         model = Applicant
         depth = 3
         # applicant is a reverse relation; this tracks to the related_name of models.ApplicantEvent.applicant
-        fields = ('url','person','applicantEvents')
+        fields = ('url', 'person', 'applicantEvents')
 
 class ProjectSerializer(serializers.HyperlinkedModelSerializer):
     organization = OrganizationSerializer()
@@ -63,9 +63,5 @@ class ProjectSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Project
         depth = 3
-        fields = ('url', 'created','organization','role','status','openPositionsCount','filledPositionsCount','applicants')
-
-
-
-
-
+        fields = ('url', 'created', 'organization', 'role', 'status', 'openPositionsCount',
+                  'filledPositionsCount', 'applicants')

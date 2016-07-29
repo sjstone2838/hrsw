@@ -1,15 +1,17 @@
 from django.contrib.auth.models import User
-from django.db.models import Count
+# from django.db.models import Count
 
-from rest_framework import permissions
-from rest_framework import renderers
+# from rest_framework import permissions
+# from rest_framework import renderers
 from rest_framework import viewsets
-from rest_framework.decorators import detail_route
-from rest_framework.response import Response
+# from rest_framework.decorators import detail_route
+# from rest_framework.response import Response
 
-from .models import *
-from .permissions import IsOwnerOrReadOnly
-from .serializers import *
+from .models import UserProfile, Organization, Role, Person, Question, Applicant, ApplicantEvent, Project
+# from .permissions import IsOwnerOrReadOnly
+from .serializers import (UserSerializer, OrganizationSerializer, RoleSerializer,
+                          UserProfileSerializer, PersonSerializer, QuestionSerializer,
+                          ApplicantEventSerializer, ApplicantSerializer, ProjectSerializer)
 
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
@@ -46,10 +48,11 @@ class ProjectViewSet(viewsets.ModelViewSet):
     def get_queryset(self):
         queryset = Project.objects.all()
 
-        # TODO (from Jeff Hull): modify request middleware so that it returns request.userProfile (search 'custom Django request middleware')
+        # TODO (from Jeff Hull): modify request middleware so that it returns request.userProfile
+        # (search 'custom Django request middleware')
         if not self.request.user.is_superuser:
-            userProfile = UserProfile.objects.get(user=self.request.user)
-            queryset = queryset.filter(organization=userProfile.organization)
+            user_profile = UserProfile.objects.get(user=self.request.user)
+            queryset = queryset.filter(organization=user_profile.organization)
 
         return queryset
 

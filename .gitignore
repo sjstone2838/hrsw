@@ -2,6 +2,7 @@
 *.pyc
 *~
 env
+performance_reviews.json
 
 # Accept these files in the repository
 !.gitignore
