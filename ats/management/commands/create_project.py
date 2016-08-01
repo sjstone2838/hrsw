@@ -54,7 +54,7 @@ class Command(BaseCommand):
             organization=organization,
             role=role,
             status=py_.sample(PROJECT_STATUS_CHOICES)[1],
-            openPositionsCount=py_.random(1, 10)
+            open_positions_count=py_.random(1, 10)
         )
 
     def create_user(self, organization):
@@ -139,13 +139,13 @@ class Command(BaseCommand):
             text=text,
             answer=answer,
             index=index,
-            applicantEvent=applicant_event
+            applicant_event=applicant_event
         )
 
     def create_applicant_event(self, applicant, owner):
         applicant_event = ApplicantEvent.objects.create(
             applicant=applicant,
-            eventType=py_.sample(APPLICANTEVENT_EVENTTYPE_CHOICES)[1],
+            event_type=py_.sample(APPLICANTEVENT_EVENTTYPE_CHOICES)[1],
             datetime=datetime.datetime.now(),
             owner=owner
         )

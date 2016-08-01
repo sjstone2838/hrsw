@@ -42,18 +42,18 @@ class ApplicantEventSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = ApplicantEvent
         depth = 3
-        fields = ('url', 'eventType', 'datetime', 'owner', 'questions')
+        fields = ('url', 'event_type', 'datetime', 'owner', 'questions')
 
 class ApplicantSerializer(serializers.HyperlinkedModelSerializer):
     # person is a related object of applicant
     person = PersonSerializer()
-    applicantEvents = ApplicantEventSerializer(many=True)
+    applicant_events = ApplicantEventSerializer(many=True)
 
     class Meta:
         model = Applicant
         depth = 3
         # applicant is a reverse relation; this tracks to the related_name of models.ApplicantEvent.applicant
-        fields = ('url', 'person', 'applicantEvents')
+        fields = ('url', 'person', 'applicant_events')
 
 class ProjectSerializer(serializers.HyperlinkedModelSerializer):
     organization = OrganizationSerializer()
@@ -62,5 +62,5 @@ class ProjectSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Project
         depth = 3
-        fields = ('url', 'created', 'organization', 'role', 'status', 'openPositionsCount',
-                  'filledPositionsCount', 'applicants')
+        fields = ('url', 'created', 'organization', 'role', 'status', 'open_positions_count',
+                  'filled_positions_count', 'applicants')

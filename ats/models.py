@@ -47,8 +47,8 @@ class Project(models.Model):
     organization = models.ForeignKey(Organization, related_name='Project_Organization')
     role = models.ForeignKey(Role, related_name='Role')
     status = models.CharField(max_length=1000, choices=PROJECT_STATUS_CHOICES, blank=True, default='')
-    openPositionsCount = models.IntegerField(default=0)
-    filledPositionsCount = models.IntegerField(default=0)
+    open_positions_count = models.IntegerField(default=0)
+    filled_positions_count = models.IntegerField(default=0)
 
     def __unicode__(self):
         return self.role.title + ' at ' + self.organization.name
@@ -87,13 +87,13 @@ APPLICANTEVENT_EVENTTYPE_CHOICES = (
 )
 
 class ApplicantEvent(models.Model):
-    applicant = models.ForeignKey(Applicant, blank=False, related_name='applicantEvents')
-    eventType = models.CharField(max_length=200, choices=APPLICANTEVENT_EVENTTYPE_CHOICES, blank=False)
+    applicant = models.ForeignKey(Applicant, blank=False, related_name='applicant_events')
+    event_type = models.CharField(max_length=200, choices=APPLICANTEVENT_EVENTTYPE_CHOICES, blank=False)
     datetime = models.DateTimeField(blank=True)
     owner = models.ForeignKey(UserProfile, blank=True)
 
     def __unicode__(self):
-        return str(self.applicant) + ": " + self.eventType
+        return str(self.applicant) + ": " + self.event_type
 
 class Question(models.Model):
     text = models.TextField(blank=True, default='')
@@ -101,7 +101,7 @@ class Question(models.Model):
     index = models.IntegerField(default=0)
     role = models.ForeignKey(Role, blank=True, null=True, related_name='questions')
     project = models.ForeignKey(Project, blank=True, null=True, related_name='questions')
-    applicantEvent = models.ForeignKey(ApplicantEvent, blank=True, null=True, related_name='questions')
+    applicant_event = models.ForeignKey(ApplicantEvent, blank=True, null=True, related_name='questions')
 
     def __unicode__(self):
         return self.text[0:100]

@@ -8,7 +8,8 @@ class OrganizationAdmin(admin.ModelAdmin):
 admin.site.register(Organization, OrganizationAdmin)
 
 class ProjectAdmin(admin.ModelAdmin):
-    list_display = ('pk', 'created', 'organization', 'role', 'status', 'openPositionsCount', 'filledPositionsCount')
+    list_display = ('pk', 'created', 'organization', 'role', 'status',
+                    'open_positions_count', 'filled_positions_count')
 admin.site.register(Project, ProjectAdmin)
 
 class RoleAdmin(admin.ModelAdmin):
@@ -28,9 +29,9 @@ class ApplicantAdmin(admin.ModelAdmin):
 admin.site.register(Applicant, ApplicantAdmin)
 
 class ApplicantEventAdmin(admin.ModelAdmin):
-    list_display = ('pk', 'applicant', 'eventType', 'datetime', 'owner')
+    list_display = ('pk', 'applicant', 'event_type', 'datetime', 'owner')
 admin.site.register(ApplicantEvent, ApplicantEventAdmin)
 
 class QuestionAdmin(admin.ModelAdmin):
-    list_display = ('pk', 'text', 'answer', 'index', 'role', 'project', 'applicantEvent')
+    list_display = ('pk', 'text', 'answer', 'index', 'role', 'project', 'applicant_event')
 admin.site.register(Question, QuestionAdmin)
