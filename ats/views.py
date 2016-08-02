@@ -48,11 +48,8 @@ class ProjectViewSet(viewsets.ModelViewSet):
     def get_queryset(self):
         queryset = Project.objects.all()
 
-        # TODO (from Jeff Hull): modify request middleware so that it returns request.userProfile
-        # (search 'custom Django request middleware')
         if not self.request.user.is_superuser:
-            user_profile = UserProfile.objects.get(user=self.request.user)
-            queryset = queryset.filter(organization=user_profile.organization)
+            queryset = queryset.filter(organization=self.request.user.user_profile.organization)
 
         return queryset
 

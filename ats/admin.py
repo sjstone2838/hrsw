@@ -3,35 +3,50 @@ from .models import UserProfile, Organization, Role, Person, Question, Applicant
 # from django.core import urlresolvers
 # from django.http import HttpResponse
 
+def standard_fields(model):
+    fields = []
+    for field in model._meta.fields:
+        if field.get_internal_type() != "ManyToManyField":
+            fields.append(field.name)
+    return tuple(fields)
+
 class OrganizationAdmin(admin.ModelAdmin):
-    list_display = ('pk', 'name', 'industry', 'created')
+    list_display = standard_fields(Organization)
+    list_display_links = list_display
 admin.site.register(Organization, OrganizationAdmin)
 
 class ProjectAdmin(admin.ModelAdmin):
-    list_display = ('pk', 'created', 'organization', 'role', 'status',
-                    'open_positions_count', 'filled_positions_count')
+    list_display = standard_fields(Project)
+    list_display_links = list_display
+    list_filter = ('organization',)
 admin.site.register(Project, ProjectAdmin)
 
 class RoleAdmin(admin.ModelAdmin):
-    list_display = ('pk', 'title', 'organization', 'description', 'created')
+    list_display = standard_fields(Role)
+    list_display_links = list_display
 admin.site.register(Role, RoleAdmin)
 
 class UserProfileAdmin(admin.ModelAdmin):
-    list_display = ('pk', 'user', 'organization')
+    list_display = standard_fields(UserProfile)
+    list_display_links = list_display
 admin.site.register(UserProfile, UserProfileAdmin)
 
 class PersonAdmin(admin.ModelAdmin):
-    list_display = ('pk', 'first_name', 'last_name', 'email')
+    list_display = standard_fields(Person)
+    list_display_links = list_display
 admin.site.register(Person, PersonAdmin)
 
 class ApplicantAdmin(admin.ModelAdmin):
-    list_display = ('pk', 'person', 'project')
+    list_display = standard_fields(Applicant)
+    list_display_links = list_display
 admin.site.register(Applicant, ApplicantAdmin)
 
 class ApplicantEventAdmin(admin.ModelAdmin):
-    list_display = ('pk', 'applicant', 'event_type', 'datetime', 'owner')
+    list_display = standard_fields(ApplicantEvent)
+    list_display_links = list_display
 admin.site.register(ApplicantEvent, ApplicantEventAdmin)
 
 class QuestionAdmin(admin.ModelAdmin):
-    list_display = ('pk', 'text', 'answer', 'index', 'role', 'project', 'applicant_event')
+    list_display = standard_fields(Question)
+    list_display_links = list_display
 admin.site.register(Question, QuestionAdmin)

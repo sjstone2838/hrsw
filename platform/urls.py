@@ -17,9 +17,9 @@ router.register(r'userProfiles', views.UserProfileViewSet)
 router.register(r'users', views.UserViewSet)
 
 urlpatterns = patterns('',
-    url(r'^api/', include(router.urls), name='api_root'),
-    url(r'^admin/', admin.site.urls),
-    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
-    #redirect all else to API root
-    url(r'^.*$', RedirectView.as_view(url='/api/'))
-)
+                       url(r'^api/', include(router.urls), name='api_root'),
+                       url(r'^admin/', admin.site.urls),
+                       url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+                       # redirect all else to API root
+                       url(r'^.*$', RedirectView.as_view(url='/api/'))
+                       )

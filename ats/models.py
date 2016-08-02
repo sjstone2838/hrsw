@@ -1,9 +1,14 @@
 from django.db import models
 from django.contrib.auth.models import User
 
-# TODO generally python PEP8 says use snake_case
-# Variables and functions are also  snake_case
-# FILENAMES are also snake_case
+class TimeStampedModel(models.Model):
+    # An abstract base class model that rovides self-updating 'created' and 'modified' fields.
+    created = models.DateTimeField(auto_now_add=True)
+    modified = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        abstract = True
+
 
 ORGANIZATION_INDUSTRY_CHOICES = (
     ('Retail', 'Retail'),
@@ -14,9 +19,7 @@ ORGANIZATION_INDUSTRY_CHOICES = (
     ('Hospitality', 'Hospitality')
 )
 
-
-class Organization(models.Model):
-    created = models.DateTimeField(auto_now_add=True)
+class Organization(TimeStampedModel):
     name = models.CharField(max_length=100, blank=True, default='', unique=True)
     industry = models.CharField(max_length=200,
                                 choices=ORGANIZATION_INDUSTRY_CHOICES,
@@ -26,9 +29,8 @@ class Organization(models.Model):
     def __unicode__(self):
         return self.name
 
-class Role(models.Model):
-    created = models.DateTimeField(auto_now_add=True)
-    organization = models.ForeignKey(Organization, related_name='Role_Organization')
+class Role(TimeStampedModel):
+    organization = models.ForeignKey(Organization)
     title = models.CharField(max_length=200, blank=False, default='')
     description = models.TextField(blank=True, default='')
 
@@ -42,10 +44,9 @@ PROJECT_STATUS_CHOICES = (
     ('Closed', 'Closed')
 )
 
-class Project(models.Model):
-    created = models.DateTimeField(auto_now_add=True)
-    organization = models.ForeignKey(Organization, related_name='Project_Organization')
-    role = models.ForeignKey(Role, related_name='Role')
+class Project(TimeStampedModel):
+    organization = models.ForeignKey(Organization)
+    role = models.ForeignKey(Role)
     status = models.CharField(max_length=1000, choices=PROJECT_STATUS_CHOICES, blank=True, default='')
     open_positions_count = models.IntegerField(default=0)
     filled_positions_count = models.IntegerField(default=0)
@@ -53,9 +54,9 @@ class Project(models.Model):
     def __unicode__(self):
         return self.role.title + ' at ' + self.organization.name
 
-class UserProfile(models.Model):
-    user = models.OneToOneField(User, related_name="UserProfile_User")
-    organization = models.ForeignKey(Organization, related_name='UserProfile_Organization')
+class UserProfile(TimeStampedModel):
+    user = models.OneToOneField(User, related_name='user_profile')
+    organization = models.ForeignKey(Organization)
 
     def __unicode__(self):
         return "{} {} ({})".format(
@@ -63,7 +64,7 @@ class UserProfile(models.Model):
             self.user.last_name,
             self.organization.name)
 
-class Person(models.Model):
+class Person(TimeStampedModel):
     first_name = models.CharField(max_length=200, blank=False)
     last_name = models.CharField(max_length=200, blank=False)
     email = models.EmailField(max_length=200, blank=False, unique=True)
@@ -71,7 +72,7 @@ class Person(models.Model):
     def __unicode__(self):
         return self.first_name + ' ' + self.last_name
 
-class Applicant(models.Model):
+class Applicant(TimeStampedModel):
     person = models.ForeignKey(Person, blank=False)
     project = models.ForeignKey(Project, related_name="applicants", blank=False)
 
@@ -86,7 +87,7 @@ APPLICANTEVENT_EVENTTYPE_CHOICES = (
     ('Resume_submission', 'Resume_submission')
 )
 
-class ApplicantEvent(models.Model):
+class ApplicantEvent(TimeStampedModel):
     applicant = models.ForeignKey(Applicant, blank=False, related_name='applicant_events')
     event_type = models.CharField(max_length=200, choices=APPLICANTEVENT_EVENTTYPE_CHOICES, blank=False)
     datetime = models.DateTimeField(blank=True)
@@ -95,7 +96,7 @@ class ApplicantEvent(models.Model):
     def __unicode__(self):
         return str(self.applicant) + ": " + self.event_type
 
-class Question(models.Model):
+class Question(TimeStampedModel):
     text = models.TextField(blank=True, default='')
     answer = models.CharField(max_length=200, blank=True, null=True)
     index = models.IntegerField(default=0)
