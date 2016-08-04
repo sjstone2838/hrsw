@@ -9,7 +9,7 @@ import pydash
 
 start_time = datetime.now()
 
-# positions are ordered by promotion path
+# position order reflects promotion path
 POSITIONS = [
     "analyst",
     "associate",
@@ -166,7 +166,7 @@ WEIGHTINGS = {
 }
 
 PROMOTION_THRESHOLD = 0.5
-PROMOTION_ACCEPTANCE_THRESHOLD = 0.5
+PROMOTION_ACCEPTANCE_THRESHOLD = 0.7
 
 
 class DataGenerator:
@@ -174,7 +174,7 @@ class DataGenerator:
 
     def __init__(self):
         """Initiate."""
-        self.counter = 0
+        # self.counter = 0
 
     def generate_person(self, person_id):
         """Generate a person."""
@@ -217,19 +217,20 @@ class DataGenerator:
             raise Exception(rating_type + "is not a rating_type option.")
 
     def generate_outcomes(self, outcome, attributes, pos_index):
-        """Generate outcomes."""
+        """Generate outcomes recursively for each tenure level."""
         position_name = POSITIONS[pos_index]
         performance = self.generate_rating(attributes, pos_index, 'performance')
         offered_promotion = performance > PROMOTION_THRESHOLD
 
         outcome[position_name] = {
-            "performance": performance,
+            "performance_score": performance,
             "offered_promotion": offered_promotion,
         }
         if offered_promotion:
-            outcome[position_name]['accepted_promotion'] = (
-                self.generate_rating(attributes, pos_index, 'retention') > PROMOTION_ACCEPTANCE_THRESHOLD
-            )
+            retention_score = self.generate_rating(attributes, pos_index, 'retention')
+            outcome[position_name]['retention_score'] = retention_score
+            outcome[position_name]['accepted_promotion'] = retention_score > PROMOTION_ACCEPTANCE_THRESHOLD
+
         pos_index += 1
         if ("accepted_promotion" in outcome[position_name] and
                 outcome[position_name]["accepted_promotion"] and
@@ -259,7 +260,7 @@ def json_serial(obj):
         return serial
     raise TypeError("Type not serializable")
 
-with open('performance_reviews.json', 'w') as outfile:
+with open('performance_reviews_v2.json', 'w') as outfile:
     json.dump(data, outfile, default=json_serial)
 
 end_time = datetime.now()
